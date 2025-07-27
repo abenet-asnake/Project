@@ -27,3 +27,37 @@ print(type(x))
 print(type(y))
 print(type(z))
 print(type(f))
+
+"""
+A data type defines the kind of value a variable can hold and 
+the operations that can be performed on it.
+
+Numeric Types
+
+Sequence Types
+
+Text Type
+
+Mapping Type
+
+Set Types
+
+Boolean Type
+
+Binary Types
+
+None Type
+
+"""
+
+
+# Numeric  Data Types 
+# float , Interger , Complex 
+numeric_dt1=2
+numeric_dt2=2.4
+numeric_dt3=2+4j
+
+print(type(numeric_dt1))
+print(type(numeric_dt2))
+print(type(numeric_dt3))
+
