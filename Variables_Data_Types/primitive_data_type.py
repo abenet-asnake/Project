@@ -67,3 +67,9 @@ name="Abenet "
 message="Hello Abenet!"
 print(message)
 print(name)
+
+#Boolean Type(bool)
+# True or False 
+is_rating=False
+print(10>5)
+print(type(is_rating))
