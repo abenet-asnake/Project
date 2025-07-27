@@ -1,3 +1,5 @@
+
+
 """
 Type conversion (or type casting) is the process of converting a value from one data type to another.
  Python supports two types of conversion:
