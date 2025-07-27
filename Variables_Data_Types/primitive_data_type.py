@@ -73,3 +73,7 @@ print(name)
 is_rating=False
 print(10>5)
 print(type(is_rating))
+
+#None Type (none)
+# it key word is none same us null
+result=None
