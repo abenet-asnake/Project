@@ -61,3 +61,9 @@ print(type(numeric_dt1))
 print(type(numeric_dt2))
 print(type(numeric_dt3))
 
+#Text Type (str)
+# string type 
+name="Abenet "
+message="Hello Abenet!"
+print(message)
+print(name)
