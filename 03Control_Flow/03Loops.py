@@ -51,4 +51,20 @@ for num in numbers:
         print("Found 4, breaking the loop")  # Output: Found 4, breaking the loop
         break  # Exit the loop when 4 is found
     print("Number:", num)  # Output: Number: 1, 2, 3    
+
+# 5. Continue Statement
+print("\n5. Continue Statement:")   
+for i in range(5):
+    if i == 2:
+        print("Skipping i =", i)  # Output: Skipping i = 2
+        continue  # Skip the rest of the loop when i is 2
+    print("i =", i)  # Output: i = 0, 1, 3, 4   
+# Practical Example
+print("\nPractical Example:")   
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    if num % 2 == 0:
+        print("Skipping even number:", num)  # Output: Skipping even number: 2, 4
+        continue  # Skip even numbers
+    print("Odd Number:", num)  # Output: Odd Number: 1, 3, 5    
     
