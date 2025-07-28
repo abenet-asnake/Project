@@ -103,4 +103,19 @@ for i in range(3):  # Outer loop
             break  # Exit the inner loop when i is 1 and j is 0
         print(f"i={i}, j={j}")  # Output: i=0, j=0; i=0, j=1; i=1, j=0; i=1, j=1; i=2, j=0; i=2, j=1
 
+# Iterate over multiple sequences together zip
+print("\nIterating over multiple sequences together using zip:")
+names = ["Alice", "Bob", "Charlie"]
+ages = [25, 30, 35]
+for name, age in zip(names, ages):
+    print(f"{name} is {age} years old.")  # Output: Alice is 25 years old, Bob is 30 years old, Charlie is 35 years old
+# 9. Practical Example with Enumerate
+print("\n9. Practical Example with Enumerate:") 
+fruits = ["apple", "banana", "cherry"]
+for index, fruit in enumerate(fruits):
+    print(f"Index {index}: {fruit}")  # Output: Index 0: apple, Index 1: banana, Index 2: cherry    
+# 10. Practical Example with List Comprehension
+print("\n10. Practical Example with List Comprehension:")   
+squares = [x**2 for x in range(10)]  # Create a list of squares from 0 to 9
+print("Squares:", squares)  # Output: Squares: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
