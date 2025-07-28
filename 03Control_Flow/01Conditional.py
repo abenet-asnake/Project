@@ -12,7 +12,19 @@ if age >= 18:
 if age < 18:
     print("You are a Teenager.")  # This will execute if age is less than 18   
 else:
-    print("You are an Adult.")  # This will execute if age is 18 or older               
+    print("You are an Adult.")  # This will execute if age is 18 or older 
+
+# 3. If-Elif-Else Statement
+marks = 85  
+if marks >= 90:
+    print("Grade: A")   
+elif marks >= 80:
+    print("Grade: B")   
+elif marks >= 70:
+    print("Grade: C")
+else:
+    print("Grade: D")           
+                  
 
 
 
