@@ -67,4 +67,20 @@ for num in numbers:
         print("Skipping even number:", num)  # Output: Skipping even number: 2, 4
         continue  # Skip even numbers
     print("Odd Number:", num)  # Output: Odd Number: 1, 3, 5    
-    
+# 6. Pass Statement
+print("\n6. Pass Statement:")   
+for i in range(5):
+    if i == 2:
+        print("Pass at i =", i)  # Output: Pass at i = 2
+        pass  # Do nothing, just a placeholder
+    print("i =", i)  # Output: i = 0, 1, 2, 3, 4
+# Practical Example
+print("\nPractical Example:")   
+for i in range(5):
+    if i == 3:
+        print("Pass at i =", i)  # Output: Pass at i = 3
+        pass  # Placeholder, no action taken
+    print("i =", i)  # Output: i = 0, 1, 2, 3, 4    
+
+# 7. Practical Example with Break, Continue, and Pass
+
