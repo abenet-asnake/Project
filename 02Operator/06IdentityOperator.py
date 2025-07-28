@@ -18,3 +18,4 @@ print("\n2. None Checks:")
 value = None
 print("value is None:", value is None)      # True
 print("value is not None:", value is not None)  # False
+
