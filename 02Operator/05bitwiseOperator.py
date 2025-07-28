@@ -1,5 +1,10 @@
 # =============================================
 #           BITWISE OPERATORS IN PYTHON
+#      it only works with bits (0s and 1s) only 
+#                1. Bitwise AND (&)
+#                2. Bitwise OR (|)  
+#                3. Bitwise NOT (~)
+#                4. Bitwise xOR (^)  
 # =============================================
 
 # Helper function to print binary representation
