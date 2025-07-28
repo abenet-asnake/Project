@@ -27,3 +27,14 @@ print("\n4. Dictionary Examples:")
 print("'name' in person:", "name" in person)               # True (checks keys)
 print("'Alice' in person:", "Alice" in person)             # False (checks values
 print("'age' not in person:", "age" not in person)         # False (checks keys)
+
+# 5. Practical Example
+print("\n5. Practical Example:")
+# Check if a user is allowed to access a feature based on their role
+user_role = "admin" 
+allowed_roles = ["admin", "editor", "moderator"]
+if user_role in allowed_roles:
+    print("Access granted to the feature.") 
+else:
+    print("Access denied. You do not have the required role.")
+    
