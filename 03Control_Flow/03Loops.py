@@ -83,4 +83,24 @@ for i in range(5):
     print("i =", i)  # Output: i = 0, 1, 2, 3, 4    
 
 # 7. Practical Example with Break, Continue, and Pass
+print("\n7. Practical Example with Break, Continue, and Pass:")
+for i in range(10): 
+    if i == 5:
+        print("Breaking at i =", i)  # Output: Breaking at i = 5
+        break  # Exit the loop when i is 5
+    elif i % 2 == 0:
+        print("Skipping even number:", i)  # Output: Skipping even number: 0, 2, 4
+        continue  # Skip even numbers
+    else:
+        print("Odd Number:", i)  # Output: Odd Number: 1, 3
+
+# 8. Practical Example with Nested Loops
+print("\n8. Practical Example with Nested Loops:")  
+for i in range(3):  # Outer loop
+    for j in range(2):  # Inner loop
+        if i == 1 and j == 0:
+            print("Breaking inner loop at i =", i, "j =", j)  # Output: Breaking inner loop at i = 1 j = 0
+            break  # Exit the inner loop when i is 1 and j is 0
+        print(f"i={i}, j={j}")  # Output: i=0, j=0; i=0, j=1; i=1, j=0; i=1, j=1; i=2, j=0; i=2, j=1
+
 
