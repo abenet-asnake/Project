@@ -23,8 +23,30 @@ elif marks >= 80:
 elif marks >= 70:
     print("Grade: C")
 else:
-    print("Grade: D")           
-                  
+    print("Grade: D")        
+
+# 4. Nested If Statements
+# Check if a number is positive, negative, or zero
+number = -5 
+if number > 0:
+    print("Positive Number")
+elif number < 0:
+    print("Negative Number")        
+else:
+    print("Zero")           
+
+# 5. Practical Example
+# Check if a user is eligible to vote based on age and citizenship  
+# Assuming the user is a citizen and at least 18 years old
+# This is a practical example of using conditional statements
+is_citizen = True   
+is_eligible = age >= 18 and is_citizen
+if is_eligible:
+    print("You are eligible to vote.")  # This will execute if both conditions are True
+else:
+    print("You are not eligible to vote.")      
+       
+
 
 
 
