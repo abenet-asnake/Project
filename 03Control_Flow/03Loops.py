@@ -35,3 +35,20 @@ matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 for row in matrix:
     for value in row:
         print("Value:", value)  # Output: Value: 1 to 9 (each element in the matrix)    
+
+# 4. Break Statement
+print("\n4. Break Statement:")  
+for i in range(5):
+    if i == 3:
+        print("Breaking at i =", i)  # Output: Breaking at i = 3
+        break  # Exit the loop when i is 3
+    print("i =", i)  # Output: i = 0, 1, 2  
+# Practical Example
+print("\nPractical Example:")           
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    if num == 4:
+        print("Found 4, breaking the loop")  # Output: Found 4, breaking the loop
+        break  # Exit the loop when 4 is found
+    print("Number:", num)  # Output: Number: 1, 2, 3    
+    
