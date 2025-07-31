@@ -88,3 +88,27 @@ def concatenate_strings(a: str, b: str) -> str:
     return a + b    
 # Calling the function with type annotations
 print(concatenate_strings("Hello, ", "World!"))  # Output: Hello, World!
+
+# 4. Variable Arguments - *args and **kwargs
+# Using *args to accept a variable number of positional arguments
+# Collects any number of positional arguments into a tuple
+def variable_args(*args: int) -> int:
+    """Return the sum of variable number of integer arguments."""
+    return sum(args)    
+# Calling the function with variable arguments
+print(variable_args(1, 2, 3))  # Output: 6
+def variable_kwargs(**kwargs: str) -> str:
+    """Return a formatted string from variable keyword arguments."""
+    return ', '.join(f"{key}={value}" for key, value in kwargs.items())
+
+# 
+# Calling the function with variable keyword arguments
+print(variable_kwargs(name="Abenet", age="30"))  # Output: name=Abenet, age=30  
+def variable_args_kwargs(*args: int, **kwargs: str) -> str:
+    """Return a formatted string from variable args and kwargs."""
+    args_str = ', '.join(map(str, args))
+    kwargs_str = ', '.join(f"{key}={value}" for key, value in kwargs.items())
+    return f"Args: {args_str}, Kwargs: {kwargs_str}"    
+# Calling the function with variable args and kwargs
+print(variable_args_kwargs(1, 2, name="Abenet", age="30"))  # Output: Args: 1, 2, Kwargs: name=Abenet, age=30   
+
