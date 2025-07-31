@@ -71,3 +71,20 @@ def make_sandwich(bread_type='white', filling='ham'):
 print(make_sandwich())  # Default values
 print(make_sandwich('whole grain'))  # Custom bread type    
 print(make_sandwich('whole grain', 'turkey'))  # Custom bread and filling
+
+# 3. Type Annotations - Static type hints (PEP 484)
+def square(number: int) -> int:
+    """Return the square of a number."""
+    return number ** 2  
+# Calling the function with type annotations
+print(square(4))  # Output: 16  
+def add_numbers(a: float, b: float) -> float:
+    """Return the sum of two floating-point numbers."""
+    return a + b    
+# Calling the function with type annotations
+print(add_numbers(3.5, 2.5))  # Output: 6
+def concatenate_strings(a: str, b: str) -> str:
+    """Return the concatenation of two strings."""
+    return a + b    
+# Calling the function with type annotations
+print(concatenate_strings("Hello, ", "World!"))  # Output: Hello, World!
