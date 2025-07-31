@@ -39,3 +39,5 @@ def match_with_guard(value):
             return "Value is between 5 and 10"
 print(match_with_guard(15))  # Output: Value is greater than 10
 print(match_with_guard(3))   # Output: Value is less than 5 
+print(match_with_guard(7))   # Output: Value is between 5 and 10
+
