@@ -64,3 +64,10 @@ def describe_pet(pet_name, animal_type='dog'):
     print(f"I have a {animal_type} named {pet_name}.")
 describe_pet('Bob')  # Default animal_type is 'dog'
 describe_pet('lol', 'Big lol')  # animal_type is 'big lol'
+# Default values for parameters
+def make_sandwich(bread_type='white', filling='ham'):
+    """Make a sandwich with specified bread and filling."""
+    return f"Sandwich with {bread_type} bread and {filling} filling."   
+print(make_sandwich())  # Default values
+print(make_sandwich('whole grain'))  # Custom bread type    
+print(make_sandwich('whole grain', 'turkey'))  # Custom bread and filling
