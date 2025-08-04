@@ -28,3 +28,37 @@ print(f"Second element: {mixed_tuple[1]}")  # Output: Second element: apple
 print(f"Third element: {mixed_tuple[2]}")  # Output: Third element: 3.14
 print(f"Fourth element: {mixed_tuple[3]}")  # Output: Fourth element: True
 
+# Tuples can be nested, meaning you can have tuples within tuples
+nested_tuple = (1, (2, 3), (4, 5))
+print(f"Nested tuple: {nested_tuple}")  # Output: Nested tuple: (1, (2, 3), (4, 5))
+# Accessing nested tuple elements
+print(f"Nested element: {nested_tuple[1][0]}")  # Output: Nested element: 2 
+print(f"Nested element: {nested_tuple[2][1]}")  # Output: Nested element: 5
+print(f"Nested element: {nested_tuple[0]}")  # Output: Nested element: 1
+
+# Tuples can be used to return multiple values from a function
+def get_user_info():
+    """Return user information as a tuple."""
+    return ("Abenet", 30, "abeneta@flipperschools.com", True)
+user_info = get_user_info()
+print(f"User Info: {user_info}")  # Output: User Info: ('Abenet', 30, 'abeneta@flipperschools.com', True)
+# Accessing returned tuple elements
+print(f"User Name: {user_info[0]}")  # Output: User Name: Abenet
+print(f"User Age: {user_info[1]}")  # Output: User Age: 30
+print(f"User Email: {user_info[2]}")  # Output: User Email: abeneta@flipperschools.com
+print(f"User Premium Status: {user_info[3]}")  # Output: User Premium Status: True
+
+# Tuples can be used as dictionary keys because they are immutable
+user_profile = {
+    "username": "abenet_asnake",
+    "email": "abeneta@flipperschools.com",
+    "premium": True,    
+}
+print(f"User Profile: {user_profile}")  # Output: User Profile: {'username': 'abenet_asnake', 'email': 'abeneta@flipperschools.com', 'premium': True}
+# Accessing dictionary values
+print(f"Username: {user_profile['username']}")  # Output: Username: abenet_asnake
+print(f"Email: {user_profile['email']}")  # Output: Email: abeneta@flipperschools.com
+print(f"Premium Status: {user_profile['premium']}")  # Output: Premium Status: True
+
+
+# Tuples can be unpacked into variables
