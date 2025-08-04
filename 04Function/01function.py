@@ -142,3 +142,4 @@ def calculate_investment(principal: float, rate: float, year: int) -> tuple [flo
 # Calling the function and unpacking the result
 final_amount, interest = calculate_investment(1000.0, 0.08, 5)
 print(f"Final Amount: {final_amount}, Interest Earned: {interest}")  # Output: Final Amount: 1276.2815625000003, Interest Earned: 276.2815625000003
+print(f"Future Value: {final_amount:.2f}, Interest: {interest:.2f}")  # Output: Future Value: 1276.2815625000003, Interest: 276.2815625000003
