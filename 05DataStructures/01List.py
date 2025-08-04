@@ -41,3 +41,6 @@ print(f"Third item: {shopping_list[2]}")  # Accessing the third item which is mi
 shopping_list[1] = "eggs"  # Changing 'bread' to 'eggs'
 print(f"Modified list: {shopping_list}")  # Now the list is ['apples', 'eggs', 'milk']
 
+# Grow the list (add items)
+shopping_list.append("bananas")  # Adding 'bananas' to the end of the list
+print(f"List after adding bananas: {shopping_list}")  # Now the list is ['apples', 'eggs', 'milk', 'bananas']
