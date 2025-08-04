@@ -55,3 +55,11 @@ print(f"Union of set_a and set_b: {union_set}")  # {1, 2, 3, 4, 5}
 # Intersection
 intersection_set = set_a & set_b  # or set_a.intersection(set_b)    
 print(f"Intersection of set_a and set_b: {intersection_set}")  # {3}
+
+# Difference
+difference_set = set_a - set_b  # or set_a.difference(set_b)
+print(f"Difference of set_a and set_b: {difference_set}")  # {1, 2}
+# Symmetric Difference
+symmetric_difference_set = set_a ^ set_b  # or set_a.symmetric_difference(set_b)
+print(f"Symmetric difference of set_a and set_b: {symmetric_difference_set}")  # {1, 2, 4, 5}
+
