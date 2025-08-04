@@ -113,3 +113,8 @@ print(f"Sliced list reversed: {sliced_numbers_reverse}")  # This will give [9, 8
  #Get from 2nd element to 2nd from last
 sliced_numbers_custom = numbers[2:-2]  # This will give [2, 3, 4, 5, 6, 7]
 print(f"Sliced list (2 to 2nd from last): {sliced_numbers_custom}")  # This will give [2, 3, 4, 5, 6, 7]
+
+
+# Create a list of squares for numbers from 0 to 4 compressive list
+squares = [x * x for x in range(5)]
+print(squares)
