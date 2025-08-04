@@ -27,3 +27,10 @@ numbers = {1, 2, 3, 4, 5}
 
 # From other iterables
 letters = set("hello")  # {'h', 'e', 'l', 'o'} (duplicates removed)
+# Adding elements
+fruits.add("orange")  # Add a new fruit 
+print(f"Fruits after adding orange: {fruits}")  # {'apple', 'banana', 'cherry', 'orange'}
+fruits.update(["kiwi", "mango"])  # Add multiple fruits
+print(f"Fruits after updating with kiwi and mango: {fruits}")  # {'apple', 'banana', 'cherry', 'orange', 'kiwi', 'mango'}
+fruits.update({"grape", "pear"})  # Add multiple fruits from a set
+print(f"Fruits after updating with grape and pear: {fruits}")  # {'apple', 'banana', 'cherry', 'orange', 'kiwi', 'mango', 'grape', 'pear'}
