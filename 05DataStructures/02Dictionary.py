@@ -60,3 +60,30 @@ print(f"User after age update: {user}")  # {'name': 'Abenet', 'age': 31, 'is_act
 # removing items using pop() and clear()
 user.pop("is_active")  # Remove key-value pair by key   
 print(f"User after removing is_active: {user}")  # {'name': 'Abenet', 'age': 31, 'email': 'benet.asnake@gmail.com'}
+
+
+"""
+
+================================================================================================================
+
+# The dict() constructor provides several ways to create dictionaries beyond the standard {} syntax.
+# It can take keyword arguments, tuples, or lists of key-value pairs.
+# Example of using dict() constructor with keyword arguments
+# Using dict() constructor with keyword arguments
+user = dict(name="Abenet", age=30, is_active=True)  
+# Using dict() constructor with a list of tuples
+user_info = dict([("name", "Abenet"), ("age", 30), ("is_active", True)])
+
+
+
+
+================================================================================================================
+
+"""
+
+user = dict(name="Abenet", age=30, is_active=True)  
+print(f"User dictionary created with dict(): {user}")  # {'name': 'Abenet', 'age': 30, 'is_active': True}
+# Using dict() constructor with a list of tuples
+user_info = dict([("name", "Abenet"), ("age", 30), ("is_active", True)])
+print(f"User info dictionary created with list of tuples: {user_info}")  # {'name': 'Abenet', 'age': 30, 'is_active': True}
+
