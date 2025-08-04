@@ -69,3 +69,26 @@ print(f"Nested list item: {mixed_list[4][1]}")  # 'list'
 # Lists allow duplicate elements
 duplicate_list = [1, 2, 2, 3, 3, 3]
 print(f"\nList with duplicates: {duplicate_list}")
+
+
+"""
+
+-----------------------------------------------------------------------------------------------------------------
+# Lists can be sliced
+# Slicing allows you to extract a portion of the list
+# Slicing syntax: list[start:end:step]
+# where 'start' is the index to start from, 'end' is the index to   
+# stop at (exclusive), and 'step' is the increment between indices.
+# If 'start' is omitted, it defaults to 0. If 'end' is omitted, it defaults to the length of the list.
+# If 'step' is omitted, it defaults to 1.   
+# Slicing returns a new list containing the specified elements.
+# Example of slicing a list
+
+
+----------------------------------------------------------------------------------------------------------------
+
+"""
+
+# Slicing a list
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(f"\nOriginal list: {numbers}")
