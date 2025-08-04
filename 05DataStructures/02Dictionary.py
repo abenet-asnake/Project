@@ -48,3 +48,7 @@ print(user["name"])  # Abenet
 
 # Safe access with get()
 print(user.get("email", "abeneta@flipperschools.com"))  # Returns default if key missing
+
+# Adding new key-value pairs
+user["email"] = "abenetasnake@gmail.com"
+print(f"Updated user dictionary: {user}") # {'name': 'Abenet', 'age': 30, 'is_active': True, 'email': 'abenet,asnake@gmail.com'}
