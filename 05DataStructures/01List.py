@@ -118,3 +118,9 @@ print(f"Sliced list (2 to 2nd from last): {sliced_numbers_custom}")  # This will
 # Create a list of squares for numbers from 0 to 4 compressive list
 squares = [x * x for x in range(5)]
 print(squares)
+
+# matrix flattened in a single list using list comprehension
+# Flattening a 2D list (matrix) into a 1D list using list comprehension
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flattened = [num for row in matrix for num in row]
+print(flattened)
