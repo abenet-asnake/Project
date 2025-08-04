@@ -45,10 +45,15 @@ print(f"Modified list: {shopping_list}")  # Now the list is ['apples', 'eggs', '
 shopping_list.append("bananas")  # Adding 'bananas' to the end of the list
 print(f"List after adding bananas: {shopping_list}")  # Now the list is ['apples', 'eggs', 'milk', 'bananas']
 
- # Insert at specific position( Add Items at Specific Position)
+ # Insert at specific position( Add Items at Specific Position) using insert()
 shopping_list.insert(1, "oranges")  # Inserting 'oranges' at index 1
 print(f"List after inserting oranges: {shopping_list}")  # Now the list is ['apples', 'oranges', 'eggs', 'milk', 'bananas']
 
-# Shrink the list (remove items)
+# Shrink the list (remove items) using remove()
 shopping_list.remove("milk")  # Removing 'milk' from the list
 print(f"List after removing milk: {shopping_list}")  # Now the list is ['apples', 'oranges', 'eggs', 'bananas']
+
+# Shrink the list (remove items) using pop()
+removed_item = shopping_list.pop(2)  # Removing the item at index 2 ( which is 'eggs')
+print(f"Removed item: {removed_item}")  # Output: Removed item: eggs
+print(f"List after popping item at index 2: {shopping_list}")  # Now the list is ['apples', 'oranges', 'bananas']
