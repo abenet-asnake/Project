@@ -34,3 +34,14 @@ fruits.update(["kiwi", "mango"])  # Add multiple fruits
 print(f"Fruits after updating with kiwi and mango: {fruits}")  # {'apple', 'banana', 'cherry', 'orange', 'kiwi', 'mango'}
 fruits.update({"grape", "pear"})  # Add multiple fruits from a set
 print(f"Fruits after updating with grape and pear: {fruits}")  # {'apple', 'banana', 'cherry', 'orange', 'kiwi', 'mango', 'grape', 'pear'}
+
+
+# Removing elements
+fruits.remove("banana")  # Remove a specific fruit  
+print(f"Fruits after removing banana: {fruits}")  # {'apple', 'cherry', 'orange', 'kiwi', 'mango', 'grape', 'pear'}
+fruits.discard("kiwi")  # Remove a specific fruit, no error if not found
+print(f"Fruits after discarding kiwi: {fruits}")  # {'apple', 'cherry', 'orange', 'mango', 'grape', 'pear'}
+removed_fruit = fruits.pop()  # Remove and return an arbitrary fruit        
+print(f"Removed fruit: {removed_fruit}")  # Output: Removed fruit: apple (or any other arbitrary fruit)
+print(f"Fruits after popping an arbitrary fruit: {fruits}")  # Remaining fruits 
+
