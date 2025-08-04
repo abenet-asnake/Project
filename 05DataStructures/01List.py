@@ -31,3 +31,13 @@
 # They can grow and shrink in size, and elements can be accessed by their index
 shopping_list = ["apples", "bread", "milk"]  # Initial list
 print(f"Original list: {shopping_list}")
+
+# Access elements by index (zero-indexed)
+print(f"First item: {shopping_list[0]}")  # Accessing the first item which is apples
+print(f"Second item: {shopping_list[1]}")  # Accessing the second item  which is bread
+print(f"Third item: {shopping_list[2]}")  # Accessing the third item which is milk
+
+# Lists are mutable - modify elements
+shopping_list[1] = "eggs"  # Changing 'bread' to 'eggs'
+print(f"Modified list: {shopping_list}")  # Now the list is ['apples', 'eggs', 'milk']
+
