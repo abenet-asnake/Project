@@ -51,3 +51,7 @@ set_b = {3, 4, 5}
 # Union
 union_set = set_a | set_b  # or set_a.union(set_b)  
 print(f"Union of set_a and set_b: {union_set}")  # {1, 2, 3, 4, 5}
+
+# Intersection
+intersection_set = set_a & set_b  # or set_a.intersection(set_b)    
+print(f"Intersection of set_a and set_b: {intersection_set}")  # {3}
