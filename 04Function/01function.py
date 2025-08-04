@@ -143,3 +143,29 @@ def calculate_investment(principal: float, rate: float, year: int) -> tuple [flo
 final_amount, interest = calculate_investment(1000.0, 0.08, 5)
 print(f"Final Amount: {final_amount}, Interest Earned: {interest}")  # Output: Final Amount: 1276.2815625000003, Interest Earned: 276.2815625000003
 print(f"Future Value: {final_amount:.2f}, Interest: {interest:.2f}")  # Output: Future Value: 1276.2815625000003, Interest: 276.2815625000003
+
+
+"""
+======================================================================================
+
+In Python, lambda functions (also called anonymous functions) are small,
+                               single-expression functions defined without a name using the lambda keyword. 
+They are useful for short, 
+                    throwaway functions often used in places where a full function definition would be overkill, 
+                    like in functional programming constructs (e.g., map(), filter(), or sorting).
+
+======================================================================================
+
+"""
+
+# Lambda Function Syntax
+# lambda arguments: expression  
+# Example: A simple lambda function that adds two numbers
+add = lambda x, y: x + y
+
+# Using the lambda function
+print(add(3, 5))  # Output: 8
+# Lambda Function with Type Annotations
+add_with_annotations: Callable[[int, int], int] = lambda x, y: x + y
+# Using the lambda function with type annotations
+print(add_with_annotations(3, 5))  # Output: 8
