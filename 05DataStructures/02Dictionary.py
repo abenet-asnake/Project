@@ -57,3 +57,6 @@ print(f"Updated user dictionary: {user}") # {'name': 'Abenet', 'age': 30, 'is_ac
 user["age"] = 31  # Update age  
 print(f"User after age update: {user}")  # {'name': 'Abenet', 'age': 31, 'is_active': True, 'email': 'abenet.asnake@gmail.com'}
 
+# removing items
+user.pop("is_active")  # Remove key-value pair by key   
+print(f"User after removing is_active: {user}")  # {'name': 'Abenet', 'age': 31, 'email': 'benet.asnake@gmail.com'}
