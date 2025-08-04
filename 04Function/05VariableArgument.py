@@ -51,3 +51,38 @@ print(create_user_profile(username="abenet_asnake",
                           email="abenet.asnaketesfaye@gmail.com",
                            is_premium=True,
                            joined="2023-10-01"))
+
+
+"""
+=====================================================================
+3. Combined *args and kwargs
+
+======================================================================
+
+"""
+
+
+# Real-World Example: Database Query Builder
+
+def build_query(table: str, *conditions: str, **options: str) -> str:
+    query= f"SELECT * FROM {table}"
+    if conditions:
+        query += " WHERE " + " AND ".join(conditions)
+
+    if options:
+        query += " " + " ".join(f"{key}={value}" for key, value in options.items())
+
+
+"""
+====================================================================================
+Feature 	  *args	                      **kwargs
+Syntax	      *args	                      **kwargs
+Collects	  Positional arguments	      Keyword arguments
+Data Type	  Tuple	                      Dictionary
+Best For	  Math operations	          Configuration
+Readability	  Medium	                  High (named params)
+Type Safety	  Low	                      Medium (with TypedDict)
+
+====================================================================================
+
+"""

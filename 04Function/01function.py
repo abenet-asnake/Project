@@ -112,3 +112,33 @@ def variable_args_kwargs(*args: int, **kwargs: str) -> str:
 # Calling the function with variable args and kwargs
 print(variable_args_kwargs(1, 2, name="Abenet", age="30"))  # Output: Args: 1, 2, Kwargs: name=Abenet, age=30   
 
+
+
+"""
+=====================================================================
+Multiple Returns - Using tuples
+
+Python functions can return multiple values packaged in a tuple, which you can unpack into separate variables.
+
+Basic Syntax
+python
+def function():
+    return value1, value2  # Returns a tuple (value1, value2)
+
+# Unpacking the result
+x, y = function()
+
+
+=====================================================================
+
+"""
+
+def calculate_investment(principal: float, rate: float, year: int) -> tuple [float, float]:
+    """Calculate the final amount and interest earned."""
+    future_value = principal * (1 + rate) ** year
+    interest = future_value - principal
+    return future_value, interest
+
+# Calling the function and unpacking the result
+final_amount, interest = calculate_investment(1000.0, 0.08, 5)
+print(f"Final Amount: {final_amount}, Interest Earned: {interest}")  # Output: Final Amount: 1276.2815625000003, Interest Earned: 276.2815625000003
