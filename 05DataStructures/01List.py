@@ -53,7 +53,19 @@ print(f"List after inserting oranges: {shopping_list}")  # Now the list is ['app
 shopping_list.remove("milk")  # Removing 'milk' from the list
 print(f"List after removing milk: {shopping_list}")  # Now the list is ['apples', 'oranges', 'eggs', 'bananas']
 
-# Shrink the list (remove items) using pop()
+# Shrink the list 
 removed_item = shopping_list.pop(2)  # Removing the item at index 2 ( which is 'eggs')
 print(f"Removed item: {removed_item}")  # Output: Removed item: eggs
-print(f"List after popping item at index 2: {shopping_list}")  # Now the list is ['apples', 'oranges', 'bananas']
+print(f"List after popping item at index 2: {shopping_list}")  # Now the list is ['apples', 'oranges', 'bananas'](remove items) using pop()
+
+
+# Lists can contain different data types
+mixed_list = [42, "hello", True, 3.14, ["nested", "list"]]
+print(f"\nMixed data types: {mixed_list}")
+
+# Access nested list
+print(f"Nested list item: {mixed_list[4][1]}")  # 'list'
+
+# Lists allow duplicate elements
+duplicate_list = [1, 2, 2, 3, 3, 3]
+print(f"\nList with duplicates: {duplicate_list}")
