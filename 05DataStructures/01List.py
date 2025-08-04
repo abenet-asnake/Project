@@ -44,3 +44,7 @@ print(f"Modified list: {shopping_list}")  # Now the list is ['apples', 'eggs', '
 # Grow the list (add items)
 shopping_list.append("bananas")  # Adding 'bananas' to the end of the list
 print(f"List after adding bananas: {shopping_list}")  # Now the list is ['apples', 'eggs', 'milk', 'bananas']
+
+ # Insert at specific position( Add Items at Specific Position)
+shopping_list.insert(1, "oranges")  # Inserting 'oranges' at index 1
+print(f"List after inserting oranges: {shopping_list}")  # Now the list is ['apples', 'oranges', 'eggs', 'milk', 'bananas']
