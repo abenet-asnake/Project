@@ -45,3 +45,9 @@ removed_fruit = fruits.pop()  # Remove and return an arbitrary fruit
 print(f"Removed fruit: {removed_fruit}")  # Output: Removed fruit: apple (or any other arbitrary fruit)
 print(f"Fruits after popping an arbitrary fruit: {fruits}")  # Remaining fruits 
 
+# set operations
+set_a = {1, 2, 3}   
+set_b = {3, 4, 5}
+# Union
+union_set = set_a | set_b  # or set_a.union(set_b)  
+print(f"Union of set_a and set_b: {union_set}")  # {1, 2, 3, 4, 5}
