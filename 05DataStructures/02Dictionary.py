@@ -56,3 +56,4 @@ print(f"Updated user dictionary: {user}") # {'name': 'Abenet', 'age': 30, 'is_ac
 # Modifying existing values or updating values
 user["age"] = 31  # Update age  
 print(f"User after age update: {user}")  # {'name': 'Abenet', 'age': 31, 'is_active': True, 'email': 'abenet.asnake@gmail.com'}
+
