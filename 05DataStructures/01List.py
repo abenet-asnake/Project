@@ -48,3 +48,7 @@ print(f"List after adding bananas: {shopping_list}")  # Now the list is ['apples
  # Insert at specific position( Add Items at Specific Position)
 shopping_list.insert(1, "oranges")  # Inserting 'oranges' at index 1
 print(f"List after inserting oranges: {shopping_list}")  # Now the list is ['apples', 'oranges', 'eggs', 'milk', 'bananas']
+
+# Shrink the list (remove items)
+shopping_list.remove("milk")  # Removing 'milk' from the list
+print(f"List after removing milk: {shopping_list}")  # Now the list is ['apples', 'oranges', 'eggs', 'bananas']
