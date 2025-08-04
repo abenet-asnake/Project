@@ -1,3 +1,5 @@
+from typing import Callable
+
 # =============================================
 #       PYTHON FUNCTIONS & TYPE ANNOTATIONS
 # =============================================
@@ -154,6 +156,12 @@ They are useful for short,
                     throwaway functions often used in places where a full function definition would be overkill, 
                     like in functional programming constructs (e.g., map(), filter(), or sorting).
 
+                    
+                    Limitations
+
+Limited to a single expression (no statements like if, for, or return).
+Can be less readable if overused or used for complex logic.
+No docstrings or annotations like regular functions.
 ======================================================================================
 
 """
@@ -166,6 +174,19 @@ add = lambda x, y: x + y
 # Using the lambda function
 print(add(3, 5))  # Output: 8
 # Lambda Function with Type Annotations
+"""
+================================================================
+from typing import Callable
+
+Improvements made:
+Added import for Callable from typing module
+
+Fixed spacing around the colon for PEP 8 compliance
+
+Maintained type consistency between annotation and lambda parameters
+=====================================================================
+"""
 add_with_annotations: Callable[[int, int], int] = lambda x, y: x + y
 # Using the lambda function with type annotations
 print(add_with_annotations(3, 5))  # Output: 8
+
