@@ -61,7 +61,6 @@ user.update({"email": "abeneta@flipperschools.com"})  # Update email
 print(f"User after email update: {user}")  # {'name': 'Abenet', 'age': 31, 'is_active': True, 'email': 'abeneta@flipperschools.com'}
 
 
-
 # removing items using pop() and clear()
 user.pop("is_active")  # Remove key-value pair by key   
 print(f"User after removing is_active: {user}")  # {'name': 'Abenet', 'age': 31, 'email': 'benet.asnake@gmail.com'}
