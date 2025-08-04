@@ -124,3 +124,9 @@ print(squares)
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened = [num for row in matrix for num in row]
 print(flattened)
+
+# List comprehension with condition which filters even numbers and squares them
+# List comprehension with condition to filter even numbers and square them
+nums = [1, 2, 3, 4, 5, 6]
+result = [x**2 for x in nums if x % 2 == 0]
+print(result)
