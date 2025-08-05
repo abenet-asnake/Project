@@ -101,3 +101,6 @@ print(result)  # {'a': 1, 'b': 2, 'c': 3}
 nums = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 squared = {k: v**2 for k, v in nums.items() if v % 2 == 0}
 print(squared)  # {'b': 4, 'd': 16}
+
+
+
