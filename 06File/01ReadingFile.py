@@ -26,3 +26,11 @@ with open(file_path, "r") as file:
     content = file.read()
     print("File content (entire file):")
     print(content)
+
+
+# Reading a file line by line
+with open(file_path, "r") as file:
+    print("\nFile content (line by line):")
+    for line in file:
+        print(line.strip())  # Using strip() to remove leading/trailing whitespace 
+      
