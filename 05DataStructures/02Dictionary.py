@@ -91,3 +91,13 @@ print(f"User dictionary created with dict(): {user}")  # {'name': 'Abenet', 'age
 user_info = dict([("name", "Abenet"), ("age", 30), ("is_active", True)])
 print(f"User info dictionary created with list of tuples: {user_info}")  # {'name': 'Abenet', 'age': 30, 'is_active': True}
 
+# changing the value of a key using list to dictionary conversion
+keys = ['a', 'b', 'c']
+values = [1, 2, 3]
+result = {k: v for k, v in zip(keys, values)}
+print(result)  # {'a': 1, 'b': 2, 'c': 3}
+
+# square the even number only 
+nums = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+squared = {k: v**2 for k, v in nums.items() if v % 2 == 0}
+print(squared)  # {'b': 4, 'd': 16}
