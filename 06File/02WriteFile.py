@@ -2,20 +2,23 @@ import os
 """
 =================================================================================================================
                                    import os 
-                                   Reading file 
+                                   Writing  file 
 
-                                   'r' mode is used to read only the file.
-                                   'r+' mode is used to read and write the file.
-                                   'w' mode is used to write to the file.
-                    'w+' mode is used to read and write the file, but it will overwrite the file if it exists.
-                                      'a' mode is used to append to the file.
-                                      'a+' mode is used to read and append to the file.
-                                      'x' mode is used to create a new file, if it already exists it will raise an error.
-                                      'b' mode is used to read or write binary files.
-                                      't' mode is used to read or write text files (default).
+        # 'w' mode is used to write to the file.
+        # 'w+' mode is used to read and write the file, but it will overwrite
+        file.write("This is a new line.\n")
+        file.writelines(["Line 1\n", "Line 2\n", "Line 3\n"])  # Writing multiple lines
+        file.flush()  # Flush the write buffer to the file
 
 
 =================================================================================================================
 
 """
 
+file_path = r"c:/Users/KIIT01/Desktop/Project BOX/Pythons/Project/06File/data.text"
+
+# Writing to a file
+with open(file_path, "w") as file:
+    file.write("This is a new line.\n")
+    file.writelines(["Line 1\n", "Line 2\n", "Line 3\n"])  # Writing multiple lines
+    file.flush()  # Flush the write buffer to the file

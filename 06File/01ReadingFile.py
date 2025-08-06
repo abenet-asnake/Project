@@ -22,7 +22,7 @@ import os
 # Reading a file with the entire file at once
 file_path = r"c:/Users/KIIT01/Desktop/Project BOX/Pythons/Project/06File/data.text"
 
-"""
+
 with open(file_path, "r") as file:
     content = file.read()
     print("File content (entire file):")
@@ -49,7 +49,7 @@ with open(file_path, "r", encoding="utf-8") as file:
     content_utf8 = file.read()
     print("\nFile content (with UTF-8 encoding):")
     print(content_utf8) # Note: Adjust the encoding as needed based on your file's encoding
-"""
+
 
 # Reading a file with error handling
 try:
