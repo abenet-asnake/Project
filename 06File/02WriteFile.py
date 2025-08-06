@@ -1,0 +1,21 @@
+import os
+"""
+=================================================================================================================
+                                   import os 
+                                   Reading file 
+
+                                   'r' mode is used to read only the file.
+                                   'r+' mode is used to read and write the file.
+                                   'w' mode is used to write to the file.
+                    'w+' mode is used to read and write the file, but it will overwrite the file if it exists.
+                                      'a' mode is used to append to the file.
+                                      'a+' mode is used to read and append to the file.
+                                      'x' mode is used to create a new file, if it already exists it will raise an error.
+                                      'b' mode is used to read or write binary files.
+                                      't' mode is used to read or write text files (default).
+
+
+=================================================================================================================
+
+"""
+
