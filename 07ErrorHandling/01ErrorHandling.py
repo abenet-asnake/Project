@@ -26,7 +26,11 @@ def divide_numbers(num1: float, num2: float) -> float:
         print("Division operation complete.")
 
 
-
 divide_numbers(10, 2)   # Works fine
 divide_numbers(10, 0)   # ZeroDivisionError
-divide_numbers(10, "a") # TypeError
+divide_numbers(10, "a") # TypeError\
+
+
+ 
+
+    
