@@ -28,4 +28,5 @@ student1=Student("Abenet",32,"FIS\1234")
 # it shows or print out inherted method 
 student1.display()
 
-Stu
+# it shows the child method including the person and the data 
+student1.show_student()
