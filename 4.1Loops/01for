@@ -6,3 +6,9 @@ for fruit in fruits:
 #Iterating over a range of numbers
 for i in range(5):
     print(i)
+
+
+#Iterating over a dictionary
+student = {"name": "Abel", "age": 20}
+for key in student:
+    print(key, student[key])
