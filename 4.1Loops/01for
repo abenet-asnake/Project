@@ -12,3 +12,10 @@ for i in range(5):
 student = {"name": "Abel", "age": 20}
 for key in student:
     print(key, student[key])
+
+#Nested for loops
+for i in range(3):
+    for j in range(2):
+        print(i, j)
+
+
