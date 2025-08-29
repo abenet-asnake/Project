@@ -67,3 +67,4 @@ print(f"x: {x}, y: {y}")  # Output: x: 10.0, y: 20.0
 # Unpacking nested tuples
 a, (b, c), (d, e) = nested_tuple    
 print(f"a: {a}, b: {b}, c: {c}, d: {d}, e: {e}")  # Output: a: 1, b: 2, c: 3, d: 4, e: 5
+
