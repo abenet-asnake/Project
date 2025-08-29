@@ -38,3 +38,9 @@ class Rectangle(AbstractShape):
 
     def perimeter(self):
         return 2 * (self.width + self.height)
+
+#output 
+shapes = [Circle(5), Rectangle(4, 6)]
+for shape in shapes:
+    print(f"Area: {shape.area()}")
+    print(f"Perimeter: {shape.perimeter()}")
