@@ -161,7 +161,7 @@ They are useful for short,
 
 Limited to a single expression (no statements like if, for, or return).
 Can be less readable if overused or used for complex logic.
-No docstrings or annotations like regular functions.
+No doc strings or annotations like regular functions.
 ======================================================================================
 
 """
